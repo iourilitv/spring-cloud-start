@@ -16,13 +16,13 @@ public interface IGreetingClient {
     @RequestMapping("/greeting2")
     String greeting2();
 
-//    @GetMapping("userInfo/{userId}/userId")
-//    String getUserDetailsById(@PathVariable Long userId);
-//
-//    @GetMapping("userInfo/{userName}/userName")
-//    String getUserDetails(@PathVariable String userName);
-//
-//    @GetMapping("userInfo/{email}/email")
-//    String getUserDetailsByEmail(@PathVariable String email);
+    @GetMapping("userInfo/{userId}/userId")
+    String getUserDetailsById(@PathVariable Long userId);
+
+    @GetMapping("userInfo/{userName}/userName")
+    String getUserDetails(@PathVariable String userName);
+
+    @GetMapping("userInfo/{email}/email")
+    String getUserDetailsByEmail(@PathVariable String email);
 
 }

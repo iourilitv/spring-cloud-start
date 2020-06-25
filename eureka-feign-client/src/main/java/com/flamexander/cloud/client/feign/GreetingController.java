@@ -28,25 +28,25 @@ public class GreetingController {
         return "greeting-view";
     }
 
-//    @GetMapping("userInfo/{userId}/userId")
-//    String getUserDetailsById(@PathVariable Long userId, Model model) {
-//        String userDetails = greetingClient.getUserDetailsById(userId);
-//        model.addAttribute("userDetailsById", userDetails);
-//        return "user-details-view";
-//    }
-//
-//    @GetMapping("userInfo/{userName}/userName")
-//    String getUserDetails(@PathVariable String userName, Model model) {
-//        String userDetails = greetingClient.getUserDetails(userName);
-//        model.addAttribute("userDetailsByUserName", userDetails);
-//        return "user-details-view";
-//    }
-//
-//    @GetMapping("userInfo/{email}/email")
-//    String getUserDetailsByEmail(@PathVariable String email, Model model) {
-//        String userDetails = greetingClient.getUserDetailsByEmail(email);
-//        model.addAttribute("userDetailsByEmail", userDetails);
-//        return "user-details-view";
-//    }
+    @GetMapping("userInfo/{userId}/userId")
+    String getUserDetailsById(@PathVariable Long userId, Model model) {
+        String userDetails = greetingClient.getUserDetailsById(userId);
+        model.addAttribute("userDetailsById", userDetails);
+        return "user-details-view";
+    }
+
+    @GetMapping("userInfo/{userName}/userName")
+    String getUserDetails(@PathVariable String userName, Model model) {
+        String userDetails = greetingClient.getUserDetails(userName);
+        model.addAttribute("userDetailsByUserName", userDetails);
+        return "user-details-view";
+    }
+
+    @GetMapping("userInfo/{email}/email")
+    String getUserDetailsByEmail(@PathVariable String email, Model model) {
+        String userDetails = greetingClient.getUserDetailsByEmail(email);
+        model.addAttribute("userDetailsByEmail", userDetails);
+        return "user-details-view";
+    }
 
 }

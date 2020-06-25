@@ -15,13 +15,13 @@ public interface IGreetingController {
     @RequestMapping("/id")
     void getIdByValue(@RequestParam("id") String fileName);
 
-//    @GetMapping("userInfo/{userId}/userId")
-//    String getUserDetailsById(@PathVariable Long userId);
-//
-//    @GetMapping("userInfo/{userName}/userName")
-//    String getUserDetailsByUserName(@PathVariable String userName);
-//
-//    @GetMapping("userInfo/{email}/email")
-//    String getUserDetailsByEmail(@PathVariable String email);
+    @GetMapping("userInfo/{userId}/userId")
+    String getUserDetailsById(@PathVariable Long userId);
+
+    @GetMapping("userInfo/{userName}/userName")
+    String getUserDetailsByUserName(@PathVariable String userName);
+
+    @GetMapping("userInfo/{email}/email")
+    String getUserDetailsByEmail(@PathVariable String email);
 
 }

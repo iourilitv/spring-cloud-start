@@ -50,32 +50,32 @@ public class DBGreetingController implements IGreetingController {
 
     }
 
-//    @Override
-//    public String getUserDetailsById(Long userId) {
-//        User user = userService.getUserById(userId);
-//        if(user == null) {
-//            return "No user with the requested userId!";
-//        }
-//        return user.toString();
-//    }
-//
-//    @Override
-//    public String getUserDetailsByUserName(String userName) {
-//        User user = userService.getUserByName(userName);
-//        if(user == null) {
-//            return "No user with the requested name!";
-//        }
-//        return user.toString();
-//    }
-//
-//    @Override
-//    public String getUserDetailsByEmail(String email) {
-//        User user = userService.getUserByEmail(email);
-//        if(user == null) {
-//            return "No user with the requested email!";
-//        }
-//        return user.toString();
-//    }
+    @Override
+    public String getUserDetailsById(Long userId) {
+        User user = userService.getUserById(userId);
+        if(user == null) {
+            return "No user with the requested userId!";
+        }
+        return user.toString();
+    }
+
+    @Override
+    public String getUserDetailsByUserName(String userName) {
+        User user = userService.getUserByName(userName);
+        if(user == null) {
+            return "No user with the requested name!";
+        }
+        return user.toString();
+    }
+
+    @Override
+    public String getUserDetailsByEmail(String email) {
+        User user = userService.getUserByEmail(email);
+        if(user == null) {
+            return "No user with the requested email!";
+        }
+        return user.toString();
+    }
 
     @GetMapping("/abc")
     public void test() {
