@@ -1,5 +1,8 @@
-package com.flamexander.cloud.client;
+package com.flamexander.cloud.client.controllers;
 
+import com.flamexander.cloud.client.controllers.interfaces.IGreetingController;
+import com.flamexander.cloud.client.utils.ExcelReader;
+import com.flamexander.cloud.client.utils.WriteExcel;
 import com.netflix.discovery.EurekaClient;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 
 @RestController
-public class GreetingControllerImpl implements GreetingController {
+public class GreetingController implements IGreetingController {
     @Autowired
     @Lazy
     private EurekaClient eurekaClient;

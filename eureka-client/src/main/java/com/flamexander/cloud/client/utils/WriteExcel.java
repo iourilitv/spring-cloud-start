@@ -1,4 +1,4 @@
-package com.flamexander.cloud.client;
+package com.flamexander.cloud.client.utils;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
@@ -11,7 +11,8 @@ import java.io.IOException;
 
 @Component
 public class WriteExcel {
-    public void write(String fileName) throws IOException, InvalidFormatException {
+//    public void write(String fileName) throws IOException, InvalidFormatException {
+    public void write(String fileName) throws IOException {
         XSSFWorkbook workbook = new XSSFWorkbook();
         // создаем файл
         XSSFSheet sheet = workbook.createSheet("Java Books");

@@ -1,4 +1,4 @@
-package com.flamexander.cloud.client;
+package com.flamexander.cloud.client.utils;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -38,7 +38,7 @@ public class ExcelReader {
             while (cellIterator.hasNext()) {
                 Cell cell = cellIterator.next();
                 String cellValue = dataFormatter.formatCellValue(cell);
-                sb.append(cellValue + "\t");
+                sb.append(cellValue).append("\t");
             }
             System.out.println();
         }
