@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+</head>
+<body>
+    <h2>UserDetails By Id</h2>
+    <!--/*@thymesVar id="userDetailsById" type=""*/-->
+    <h6 th:text="${userDetailsById}"></h6>
+
+    <h2>UserDetails By UserName</h2>
+    <!--/*@thymesVar id="userDetailsByUserName" type=""*/-->
+    <h6 th:text="${userDetailsByUserName}"></h6>
+
+    <h2>UserDetails By Email</h2>
+    <!--/*@thymesVar id="userDetailsByEmail" type=""*/-->
+    <h6 th:text="${userDetailsByEmail}"></h6>
+</body>
+</html>
